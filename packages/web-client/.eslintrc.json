@@ -1,0 +1,58 @@
+{
+  "extends": [
+    "react-app",
+    "airbnb"
+  ],
+  "rules": {
+    // General
+    "arrow-parens": [2, "as-needed"],
+    "no-param-reassign": 0,
+    "object-curly-newline": [2, { "consistent": true }],
+    "no-plusplus": [0, { "allowForLoopAfterthoughts": true }],
+    "linebreak-style": 0,
+    "global-require": 0,
+    "no-underscore-dangle": 0,
+    "no-unused-expressions": 0,
+    "spaced-comment": [
+      2,
+      "always",
+      {
+        "line": {
+          "exceptions": ["-", "+", "*"],
+          "markers": ["!", "/"]
+        },
+        "block": {
+          "exceptions": ["-", "+", "*"],
+          "markers": ["!", "*"],
+          "balanced": true
+        }
+      }
+    ],
+    "func-names": 0,
+    "no-console": 2,
+
+    // React
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "jsx-a11y/label-has-for": 0,
+    "jsx-a11y/label-has-associated-control": [ 2, {
+      "labelComponents": [],
+      "labelAttributes": [],
+      "controlComponents": [],
+      "assert": "either",
+      "depth": 25
+    }],
+    "react/prop-types": 0,
+    "react/no-danger": 0,
+    "react/no-did-update-set-state": 0,
+    // Import
+    "import/no-unresolved": 0,
+    "import/no-named-as-default": 0,
+    "import/no-dynamic-require": 0,
+
+    "jsx-a11y/anchor-is-valid": [2, {
+      "components": ["a"],
+      "aspects": ["noHref", "invalidHref", "preferButton"]
+    }],
+    "jsx-a11y/click-events-have-key-events": 0
+  }
+}

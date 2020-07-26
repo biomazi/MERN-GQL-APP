@@ -1,0 +1,7 @@
+query allLinks {
+  allLinks {
+    id
+    url
+    tags
+  }
+}

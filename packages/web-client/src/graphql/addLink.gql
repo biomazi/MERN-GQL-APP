@@ -1,0 +1,7 @@
+mutation addLink($url: String!, $tags: String!) {
+  addLink(url: $url, tags: $tags) {
+    id
+    url
+    tags
+  }
+}

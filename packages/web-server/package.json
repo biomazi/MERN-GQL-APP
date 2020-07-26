@@ -1,0 +1,32 @@
+{
+  "name": "web-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start:dev": "nodemon --exec babel-node ./public/server/bin/www.js",
+    "start": "babel-node ./public/server/bin/www.js"
+  },
+  "dependencies": {
+    "apollo-server": "^2.16.0",
+    "apollo-server-express": "^2.16.0",
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3",
+    "compare-urls": "^2.0.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "graphql-tools": "^6.0.15",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.25",
+    "morgan": "~1.9.1",
+    "normalize-url": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "nodemon": "^2.0.4"
+  }
+}

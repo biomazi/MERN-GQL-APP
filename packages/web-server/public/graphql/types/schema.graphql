@@ -1,0 +1,18 @@
+# import User from "./user/user.graphql"
+# import Link from "./link/link.graphql"
+# import Ok from "./ok/ok.graphql"
+
+type Query {
+  me: User
+  user(id: ID!): User
+  users: [User]
+  getLink(id: ID!): Link
+  allLinks: [Link]
+}
+
+type Mutation {
+  addUser(email: String!, password: String!, username: String!): User
+  login(email: String, password: String): User
+  logout: Ok
+  addLink(url: String!, tags: String!): Link
+}
